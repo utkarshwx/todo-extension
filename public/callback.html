@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Authenticating...</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get("token");
+    if (token) {
+      chrome.runtime.sendMessage({ type: "OAUTH_SUCCESS", token });
+      window.close();
+    }
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>
