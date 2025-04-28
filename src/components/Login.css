@@ -1,0 +1,162 @@
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    width: 400px;
+    overflow: hidden;
+}
+
+.login-header {
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.login-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.subtitle {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.error-message {
+    margin-top: 8px;
+    color: #dc2626;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.login-form-container {
+    padding: 0 24px 24px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-group input {
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #B9FF66;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.password-input-container {
+    position: relative;
+}
+
+.password-input-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password .icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+
+    :hover {
+        opacity: 1;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.forgot-password {
+    text-align: right;
+}
+
+.text-button {
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.text-button:hover {
+    color: #374151;
+    text-decoration: underline;
+}
+
+.login-button {
+    background-color: #B9FF66;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #74eb25;
+}
+
+.login-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(174, 246, 59, 0.5);
+}
+
+.register-link {
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+}
